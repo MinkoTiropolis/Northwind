@@ -1,0 +1,41 @@
+# ---- .NET / Visual Studio ----
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+.vs/
+*.userprefs
+project.lock.json
+artifacts/
+
+# Build results / publish
+[Pp]ublish/
+*.dll
+*.pdb
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# ---- Frontend (Vue / Node) ----
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.*
+!.env.example
+
+# ---- OS ----
+Thumbs.db
+.DS_Store
+
+# ---- Local secrets ----
+appsettings.*.Local.json
+secrets.json
