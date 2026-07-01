@@ -1,6 +1,21 @@
 @Northwind.Api_HostAddress = http://localhost:5179
 
-GET {{Northwind.Api_HostAddress}}/weatherforecast/
+// Return all customers
+GET {{Northwind.Api_HostAddress}}/api/customers
+Accept: application/json
+###
+
+// Search / filter customers by name
+GET {{Northwind.Api_HostAddress}}/api/customers?search=alfreds
+Accept: application/json
+###
+
+// Return customer's details and order history summary
+GET {{Northwind.Api_HostAddress}}/api/customers/ALFKI
+Accept: application/json
+###
+
+// Return status 404
+GET {{Northwind.Api_HostAddress}}/api/customers/NonExistingCustomer
 Accept: application/json
 
-###
