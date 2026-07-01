@@ -21,7 +21,7 @@ public class CustomerService : ICustomerService
         if (!string.IsNullOrWhiteSpace(search))
         {
             var term = search.Trim();
-            query = query.Where(c => EF.Functions.Like(c.CompanyName, $"%{term}%"));
+            query = query.Where(c => c.CompanyName.Contains(term));
         }
 
         return await query
